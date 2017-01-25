@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/android_card_view_example2"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp">
+        <com.rey.material.widget.RelativeLayout
+            android:id="@+id/inflateParentView"
+            style="@style/FlatWaveButtonRippleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <com.rey.material.widget.TextView
+
+                android:id="@+id/tvFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="Name"
+
+                android:textSize="15sp"
+                android:textColor="@color/color_black"
+                android:textStyle="bold" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/tvphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="phone"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:layout_below="@+id/tvFullName"
+                android:textColor="@color/color_black"
+                />
+
+            <com.rey.material.widget.TextView
+
+                android:id="@+id/tvbalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="10dp"
+
+                android:text="Balance"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/color_black"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_below="@+id/tvFullName"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp" />
+
+            <ImageView
+                android:id="@+id/msg"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:src="@drawable/whatsapp"
+
+                android:layout_below="@+id/tvbalance"
+                android:layout_alignEnd="@+id/tvbalance"
+                android:layout_marginTop="10dp"
+                android:layout_alignRight="@+id/tvbalance" />
+
+            <ImageView
+                android:id="@+id/pay"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:src="@drawable/rupess"
+
+                android:layout_alignTop="@+id/call"
+                android:layout_toStartOf="@+id/call"
+                android:layout_marginEnd="64dp"
+                android:layout_toLeftOf="@+id/call"
+                android:layout_marginRight="64dp" />
+
+            <ImageView
+                android:id="@+id/call"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:src="@drawable/call"
+                android:layout_marginRight="50dp"
+                android:layout_alignTop="@+id/msg"
+                android:layout_toStartOf="@+id/msg"
+                android:layout_toLeftOf="@+id/msg" />
+
+            <ImageView
+                android:id="@+id/records"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/records"
+                android:layout_alignBottom="@+id/msg"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true" />
+        </com.rey.material.widget.RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/color_grey">
+
+    </LinearLayout>
+
+</LinearLayout>

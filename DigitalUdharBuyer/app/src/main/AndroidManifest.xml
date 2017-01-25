@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ateam.digitaludharbuyer">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:screenOrientation="portrait"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:noHistory="true" />
+        <activity android:name=".TableManipulationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Scanner"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Paytobuyer"
+            android:noHistory="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Login"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".TransectionDetails"
+            android:noHistory="true" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".MyDetails"
+            android:noHistory="true" />
+        <activity android:name=".QRScanner"
+            android:screenOrientation="portrait"/>
+
+        <receiver android:name=".ConnectivityChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".ThreeTabsActivity"
+            android:screenOrientation="portrait"/>
+
+        <service
+            android:name=".Internet_Service"
+            android:exported="false" />
+
+        <activity
+            android:name=".QRctivity"
+            android:screenOrientation="portrait"
+            android:noHistory="true" />
+        <activity android:name=".SignIn"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

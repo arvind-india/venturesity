@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "1003963247758",
+    "firebase_url": "https://digital-udhar.firebaseio.com",
+    "project_id": "digital-udhar",
+    "storage_bucket": "digital-udhar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003963247758:android:e4318bbd125c176b",
+        "android_client_info": {
+          "package_name": "com.ateam.digitaludharseller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003963247758-0bskmrtec4qg0cq6o22h7bhkoni9jnu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2igxdkcMCwHHxxD6AM51mAONU3NkW7ko"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003963247758:android:da6ee41b4ad40cb8",
+        "android_client_info": {
+          "package_name": "com.ateam.digitaludharbuyer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003963247758-0bskmrtec4qg0cq6o22h7bhkoni9jnu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2igxdkcMCwHHxxD6AM51mAONU3NkW7ko"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

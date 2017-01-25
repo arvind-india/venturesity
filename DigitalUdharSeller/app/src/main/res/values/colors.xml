@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transperent_bg">#AFAFAF</color>
+    <color name="color_blue">#0050EF</color>
+    <color name="color_pink">#CC277F</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="result_view">#b0000000</color>
+    <color name="color_grey">#E6E6E6</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="color_black">#000000</color>
+    <color name="QRCodeWhiteColor">#ffffff</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="QRCodeBlackColor">#000000</color>
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="primary_light">#BBDEFB</color>
+    <color name="accent">#03A9F4</color>
+    <color name="primary_text">#FFFFFF</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+
+    <color name="ColorPrimary">#FF5722</color>
+    <color name="ColorPrimaryDark">#E64A19</color>
+
+    <color name="lightbluefloat">#336CB1</color>
+</resources>

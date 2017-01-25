@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/android_card_view_example2"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp">
+        <com.rey.material.widget.RelativeLayout
+            android:id="@+id/inflateParentView"
+            style="@style/FlatWaveButtonRippleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <com.rey.material.widget.TextView
+
+                android:id="@+id/tvFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="Name"
+
+                android:textSize="15sp"
+                android:textColor="@color/color_black"
+                android:textStyle="bold" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/tvphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="phone"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:layout_below="@+id/tvFullName"
+                android:textColor="@color/color_black"
+                />
+
+            <com.rey.material.widget.TextView
+
+                android:id="@+id/tvbalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="10dp"
+
+                android:text="Balance"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/color_black"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_below="@+id/tvFullName"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp" />
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1,2,3,4"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/tvphone">
+                <TableRow>
+                    <ImageView
+                        android:layout_column="1"
+                        android:id="@+id/msg"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/whatsapp"
+
+                    />
+
+                    <ImageView
+                        android:layout_column="1"
+                        android:id="@+id/pay"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/rupess"
+                     />
+
+                    <ImageView
+                        android:layout_column="1"
+                        android:id="@+id/call"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/call"
+                    />
+
+                    <ImageView
+                        android:layout_column="1"
+                        android:id="@+id/records"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/records" />
+
+                    <!--<ImageView-->
+                        <!--android:layout_column="1"-->
+                        <!--android:id="@+id/request"-->
+                        <!--android:layout_width="32dp"-->
+                        <!--android:layout_height="32dp"-->
+                        <!--android:src="@drawable/rupess" />-->
+
+            </TableRow>
+        </TableLayout>
+        </com.rey.material.widget.RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/color_grey">
+
+    </LinearLayout>
+
+</LinearLayout>

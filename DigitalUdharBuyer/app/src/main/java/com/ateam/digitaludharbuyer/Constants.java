@@ -24,7 +24,7 @@ public class Constants {
     public static final String BALANCE = "Balance";
     public static final String TRANSECTIONS = "Transaction";
     public static final String MYDETAILS  = BASE_URL + "buyerdetails.php?username=";
-    public static final String TRANSACTION_URL= BASE_URL +"/api/user/transactions/?seller=";
+    public static final String TRANSACTION_URL= BASE_URL +"transaction_history.php?seller=";
     public static final String transections_url =  BASE_URL+ "pay_money.php";
     public static final String transactions_url = BASE_URL +  "/api/user/add_money/?seller_number=";
     public static final String transactions_pay_url = BASE_URL+ "pay_money.php?seller_number=";

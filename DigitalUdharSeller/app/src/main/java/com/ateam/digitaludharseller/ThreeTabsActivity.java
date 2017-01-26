@@ -44,9 +44,9 @@ import java.util.concurrent.TimeUnit;
 public class ThreeTabsActivity extends BaseActivity {
 
     public static final String SYNC = "sync";
+    public static final String PhoneNumber = "phoneKey";
     SharedPreferences settings;
     ImageView Sync;
-    public static final String PhoneNumber = "phoneKey";
     int backButtonCount = 0;
 
     Button btnAddNewRecord;
@@ -290,12 +290,12 @@ public class ThreeTabsActivity extends BaseActivity {
                                         public void onResponse(JSONObject response) {
 
                                             // display response
-                                            for (int i = 1; i <= response.length(); i++) {
+                                            for (int i = 0; i < response.length(); i++) {
                                                 try {
 
                                                     JSONObject jsonObject = response.getJSONObject(String.valueOf(i));
                                                     String transaction_amount = jsonObject.getString("transaction_amount").toString();
-                                                    String transaction_time = jsonObject.getString("transaction_time").toString();
+                                                    String transaction_time = jsonObject.getString("time_of_pay").toString();
                                                     String description = jsonObject.getString("description").toString();
                                                     String transaction_id = jsonObject.getString("transaction_id").toString();
                                                     SQLiteHelper sqLiteHelper = new SQLiteHelper(ThreeTabsActivity.this);
@@ -399,12 +399,12 @@ public class ThreeTabsActivity extends BaseActivity {
                                                         public void onResponse(JSONObject response) {
 
                                                             // display response
-                                                            for (int i = 1; i <= response.length(); i++) {
+                                                            for (int i = 0; i < response.length(); i++) {
                                                                 try {
 
                                                                     JSONObject jsonObject = response.getJSONObject(String.valueOf(i));
                                                                     String transaction_amount = jsonObject.getString("transaction_amount").toString();
-                                                                    String transaction_time = jsonObject.getString("transaction_time").toString();
+                                                                    String transaction_time = jsonObject.getString("time_of_pay").toString();
                                                                     String description = jsonObject.getString("description").toString();
                                                                     String transaction_id = jsonObject.getString("transaction_id").toString();
                                                                     SQLiteHelper sqLiteHelper = new SQLiteHelper(ThreeTabsActivity.this);
@@ -636,15 +636,7 @@ public class ThreeTabsActivity extends BaseActivity {
         startActivity(Mydetailintent);
 //        }
     }
-    private class Holder {
-        TextView tvFullName;
-        String firstname;
-        long number;
-        TextView phone;
-        long balance;
-        TextView text_balance;
-        String lastname;
-    }
+
     @Override
     protected void onResume() {
         super.onResume();
@@ -662,6 +654,7 @@ public class ThreeTabsActivity extends BaseActivity {
 
 
     }
+
     public void onBackPressed()
     {
         if(backButtonCount >= 1)
@@ -676,6 +669,16 @@ public class ThreeTabsActivity extends BaseActivity {
             Toast.makeText(this, "Press the back button once again to close the application.", Toast.LENGTH_SHORT).show();
             backButtonCount++;
         }
+    }
+
+    private class Holder {
+        TextView tvFullName;
+        String firstname;
+        long number;
+        TextView phone;
+        long balance;
+        TextView text_balance;
+        String lastname;
     }
 
 

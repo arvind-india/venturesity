@@ -10,7 +10,7 @@ public class Constants {
     public static final String PREFS_NAMEE = "Login_details";
     public static final String MYDETAILS  = BASE_URL +"sellerdetails.php?username=";
     public static final String LoginUrl =  BASE_URL +"seller_login.php?username=";
-    public static final String TRANSACTION_URL= BASE_URL +"/api/user/transactions/?seller=";
+    public static final String TRANSACTION_URL= BASE_URL +"transaction_history.php?seller=";
     //    public static final String PaymentAddress = "http://192.168.2.9:8000/api/user/razorpay/?payment_id=";
     public static final String PaymentAddress = BASE_URL + "/api/user/razorpay/?payment_id=";
     public static final String url = BASE_URL + "add_buyer.php?full_name=";

@@ -299,7 +299,7 @@ public class ThreeTabsActivity extends AppCompatActivity {
                                         public void onResponse(JSONObject response) {
 
                                             // display response
-                                            for (int i = 1; i <= response.length(); i++) {
+                                            for (int i = 0; i < response.length(); i++) {
                                                 try {
 
                                                     JSONObject jsonObject = response.getJSONObject(String.valueOf(i));
@@ -412,7 +412,7 @@ public class ThreeTabsActivity extends AppCompatActivity {
                                                     public void onResponse(JSONObject response) {
 
                                                         // display response
-                                                        for (int i = 1; i <= response.length(); i++) {
+                                                        for (int i = 0; i < response.length(); i++) {
                                                             try {
 
                                                                 JSONObject jsonObject = response.getJSONObject(String.valueOf(i));

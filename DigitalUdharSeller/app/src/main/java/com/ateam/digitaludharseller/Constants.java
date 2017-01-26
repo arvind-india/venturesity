@@ -14,7 +14,7 @@ public class Constants {
     //    public static final String PaymentAddress = "http://192.168.2.9:8000/api/user/razorpay/?payment_id=";
     public static final String PaymentAddress = BASE_URL + "/api/user/razorpay/?payment_id=";
     public static final String url = BASE_URL + "add_buyer.php?full_name=";
-    public static final String transactions_url = BASE_URL + "/api/user/add_money/?seller_number=";
+    public static final String transactions_url = BASE_URL + "add_money.php?seller_number=";
     public static final String transactions_pay_url = BASE_URL + "/api/user/pay_money/?seller_number=";
     public static final String isScannedurl = BASE_URL + "/api/user/scan_pay_money/?seller_number=";
     public static final String SERVER_ADDRESS = BASE_URL;

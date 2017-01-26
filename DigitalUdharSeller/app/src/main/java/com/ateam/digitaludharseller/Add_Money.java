@@ -86,7 +86,9 @@ public class Add_Money extends BaseActivity{
                 Log.d("UUID",transaction_id.toString());
                 ContactModel contactModel = new ContactModel();
                 amount = Etamount.getText().toString();
+
                 String url = Constants.transactions_url + Seller_number + "&buyer_number=" + phonenumber + "&transaction_amount=" + amount + "&transaction_id=" +transaction_id + "&is_scan=0";
+                Log.i("URL",url);
                 JsonObjectRequest getRequest = new JsonObjectRequest(Request.Method.GET, url, null,
                         new Response.Listener<JSONObject>() {
                             @Override

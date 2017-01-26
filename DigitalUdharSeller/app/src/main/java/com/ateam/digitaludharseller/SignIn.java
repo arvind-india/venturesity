@@ -201,7 +201,7 @@ public class SignIn extends AppCompatActivity {
                                     // add it to the RequestQueue
                                     queue.add(getRequest);
                                 } else {
-                                    for (int i = 1; i <= response.length(); i++) {
+                                    for (int i = 0; i < response.length(); i++) {
                                         try {
                                             Util.updateActivationDate(SignIn.this, response.getString("expiration_date"));
                                             JSONObject jsonObject = response.getJSONObject(String.valueOf(i));

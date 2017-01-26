@@ -6,7 +6,7 @@ public class Constants {
 
     public static final int UPDATE_RECORD = 1;
     //    public static final String BASE_URL = "http://app.digitalkhata.com";
-    public static final String BASE_URL = "http://8cb3fc8a.ngrok.io/venturesity/";
+    public static final String BASE_URL = "http://aefbc591.ngrok.io/venturesity/";
     public static final String SERVER_ADDRESS = BASE_URL + "/api/user/";
     public static final String Signup = BASE_URL ;
     public static final String CALL = "Call";
@@ -25,10 +25,10 @@ public class Constants {
     public static final String TRANSECTIONS = "Transaction";
     public static final String MYDETAILS  = BASE_URL + "buyerdetails.php?username=";
     public static final String TRANSACTION_URL= BASE_URL +"/api/user/transactions/?seller=";
-    public static final String transections_url =  BASE_URL+ "/api/user/pay_money/";
+    public static final String transections_url =  BASE_URL+ "pay_money.php?seller_number=";
     public static final String transactions_url = BASE_URL +  "/api/user/add_money/?seller_number=";
-    public static final String transactions_pay_url = BASE_URL+ "/api/user/pay_money/?seller_number=";
-    public static final String ADD_SELLER_URL = BASE_URL + "/api/user/add_seller/?full_name=";
+    public static final String transactions_pay_url = BASE_URL+ "pay_money.php?seller_number=";
+    public static final String ADD_SELLER_URL = BASE_URL + "add_seller.php?full_name=";
     public static final String SCAN_ADD_URL =  BASE_URL + "/api/user/scan_add_money/?seller_number=";
     public static final String ID = "ID";
 }

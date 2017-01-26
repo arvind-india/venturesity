@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Khata-Buyer</string>
+    <string name="app_name">Buyer</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="hint_name">First Name *</string>

@@ -95,6 +95,7 @@ public class TableManipulationActivity extends Activity {
                 //Server part
                 String url = Constants.ADD_SELLER_URL + first + last +"&seller_phone_number="+
                         phnumber + "&buyer_number="+ number;
+                Log.i("URL",url);
                 RequestQueue queue = Volley.newRequestQueue(this);
                 JsonObjectRequest getRequest = new JsonObjectRequest(Request.Method.GET,url , null,
                         new Response.Listener<JSONObject>()

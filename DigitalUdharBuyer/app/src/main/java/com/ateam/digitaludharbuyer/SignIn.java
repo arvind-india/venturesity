@@ -32,6 +32,7 @@ import com.android.volley.toolbox.Volley;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessaging;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -158,14 +159,14 @@ public class SignIn extends AppCompatActivity {
                                                         username = response.getString("username");
                                                         String first_name = response.getString("first_name");
                                                         String last_name = response.getString("last_name");
-                                                        String my_code = response.getString("my_code");
-                                                        String points = response.getString("points");
+//                                                        String my_code = response.getString("my_code");
+//                                                        String points = response.getString("points");
                                                         editor.putString(Name, first_name);
                                                         editor.putString(LName, last_name);
                                                         editor.putInt(FLAG, 1);
                                                         editor.putString(Phone, username);
-                                                        editor.putString(MYCODE, my_code);
-                                                        editor.putString(POINTS, points);
+//                                                        editor.putString(MYCODE, my_code);
+//                                                        editor.putString(POINTS, points);
                                                         editor.commit();
                                                     } catch (JSONException e) {
                                                         e.printStackTrace();
@@ -192,8 +193,10 @@ public class SignIn extends AppCompatActivity {
                                     queue.add(getRequest);
                                 }
                                 else {
-                                    for (int i = 1; i <= response.length(); i++) {
+                                    Log.i("Responce",response.toString());
+                                    for (int i = 0; i < response.length(); i++) {
                                         try {
+//                                            JSONArray jsonArray =response.getJSONArray()
                                             JSONObject jsonObject = response.getJSONObject(String.valueOf(i));
                                             String firstname = jsonObject.getString("first_name").toString();
                                             String lastname = jsonObject.getString("last_name").toString();
@@ -229,14 +232,14 @@ public class SignIn extends AppCompatActivity {
                                                         username = response.getString("username");
                                                         String first_name = response.getString("first_name");
                                                         String last_name = response.getString("last_name");
-                                                        String my_code = response.getString("my_code");
-                                                        String points = response.getString("points");
+//                                                        String my_code = response.getString("my_code");
+//                                                        String points = response.getString("points");
                                                         editor.putString(Name, first_name);
                                                         editor.putString(LName, last_name);
                                                         editor.putInt(FLAG, 1);
                                                         editor.putString(Phone, username);
-                                                        editor.putString(MYCODE, my_code);
-                                                        editor.putString(POINTS, points);
+//                                                        editor.putString(MYCODE, my_code);
+//                                                        editor.putString(POINTS, points);
                                                         editor.commit();
                                                     } catch (JSONException e) {
                                                         e.printStackTrace();

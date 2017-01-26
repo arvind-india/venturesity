@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Digital Udhar Seller</string>
+    <string name="app_name">Seller</string>
     <string name="action_settings">Settings</string>
     <string name="hint_name">First Name *</string>
     <string name="hint_email">Phone Number *</string>

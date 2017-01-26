@@ -80,7 +80,6 @@ public class Paytobuyer extends AppCompatActivity {
                 Log.i("describtioninfo: ", describtioninfo);
 
                 String url = Constants.transections_url ;
-
                 StringRequest getRequest = new StringRequest(Request.Method.POST, url,
                         new Response.Listener<String>() {
                             @Override

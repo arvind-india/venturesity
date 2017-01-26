@@ -109,10 +109,12 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             phone_number = message.substring(0, 10);
             transactionid = message.substring(10,46);
             amount = message.substring(46);
-            Log.d("amount" , amount);
-            Log.d("phone",phone_number);
-            Log.d("transaction",transactionid);
-            Log.d("transactionamount",transactionamount);
+
+            //TODO uncooment me
+//            Log.d("amount" , amount);
+//            Log.d("phone",phone_number);
+//            Log.d("transaction",transactionid);
+//            Log.d("transactionamount",transactionamount);
             if (sqLiteHelper.checkTransaction(transactionid)) {
                 contactModel.setBalance(Long.parseLong(amount));
                 sqLiteHelper.updateBalance(contactModel, phone_number);

@@ -2,7 +2,7 @@ package com.ateam.digitaludharseller;
 
 //"http://app.digitalkhata.com"
 public class Constants {
-//    public static final String BASE_URL = "http://app.digitalkhata.com";
+
     public static final String BASE_URL = "http://imagineus.esy.es/";
     public static final String LOGIN = BASE_URL + "/api/user/login";
     public static int socketTimeout = 30000;

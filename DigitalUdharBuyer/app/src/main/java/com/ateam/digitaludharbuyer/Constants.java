@@ -5,7 +5,7 @@ public class Constants {
     public static final int ADD_RECORD = 0;
 
     public static final int UPDATE_RECORD = 1;
-    //    public static final String BASE_URL = "http://app.digitalkhata.com";
+
     public static final String BASE_URL = "http://imagineus.esy.es/";
     public static final String SERVER_ADDRESS = BASE_URL + "/api/user/";
     public static final String Signup = BASE_URL ;

@@ -38,10 +38,13 @@ ii)At the time of Payment : At the end of a month or when buyer wants to clear a
 Deployment Links - 
 
 App -
+
 Buyer App-> https://www.dropbox.com/s/r9gvyyrxlg57skj/Buyer_1.apk?dl=0
+
 Seller App -> https://www.dropbox.com/s/gu9kwu6isx645aa/Seller.apk?dl=0
 
 APIs -
+
 imagineus.esy.es
 
 

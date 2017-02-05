@@ -23,11 +23,13 @@ Features-
 Working – 
 
 •	Offline Mode 
+
 i) At the time of Udhar: In this mode buyer selects the seller and chooses Udhar option after which a QR code will be generated on the buyer side and this code will be scanned by the seller.
 
 ii) At the time of payment: At the end of a month or when buyer wants to clear all his debts, he reaches  that Seller physically by going there. Then, the Seller selects that particular buyer, chooses add money option and enters the debt amount. A QR code will be generated on the seller side which will be scanned by that buyer for payment.
 
 •	Online Mode
+
 i)At the time of Udhaar : In this mode buyer selects the seller and chooses the items he wishes to buy.
 
 ii)At the time of Payment : At the end of a month or when buyer wants to clear all his debts, he chooses the Seller and enters the required amount. In this case, the amount reaches the seller through internet in the form of a QR code, which can be easily scanned by the seller.
